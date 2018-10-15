@@ -1,0 +1,37 @@
+.ImagesP {
+  height: 50px;
+  width: 50px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  opacity: .7;
+  filter: alpha(opacity=100);
+}
+.ImagesP::after {
+  content: "";
+  display: block;
+  opacity: .4;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  backgroud: black;
+}
+
+.ImagesP * {
+  position: relative;
+  z-index: 2;
+}
+
+.ImagesP h1, .hero h2 {
+  color: white;
+  font-family: Monospace;
+  display: center;
+}
+
+.ImagesP h1 {
+  font-size: 60px;
+  padding-top: 50px;
+  margin-top:0;
+}

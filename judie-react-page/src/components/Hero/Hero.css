@@ -1,0 +1,36 @@
+.hero {
+  height: 150px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  opacity: ;
+  filter: alpha(opacity=25);
+}
+.hero::after {
+  content: "";
+  display: block;
+  opacity: .4;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  backgroud: black;
+}
+
+.hero * {
+  position: relative;
+  z-index: 2;
+}
+
+.hero h1, .hero h2 {
+  color: white;
+  font-family: Monospace;
+  display: center;
+}
+
+.hero h1 {
+  font-size: 60px;
+  padding-top: 50px;
+  margin-top:0;
+}
